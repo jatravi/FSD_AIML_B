@@ -18,7 +18,7 @@
 }
 .amazon-logo-text {
     font-family: Arial, Helvetica, sans-serif;
-    color: #febd69;
+    color: #febe311119;
     font-size: 2rem;
     font-weight: bold;
 }
@@ -225,6 +225,11 @@
     border: 1px solid black;
     /* background-image: url("https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2.SY116_CB555624324.jpg"); */
     
+}
+
+img{
+	height: 100px;
+    width: 100px;
 }
 
 .img11,.img21,.img31,.img41{
