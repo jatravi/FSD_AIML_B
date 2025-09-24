@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+
+    <style>
+        .body{
+            align-items: center;
+        }
+        .container{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Counter</h1>
+        <div id="counter"><h1>0</h1></div>
+        <div>
+            <button onclick="plus()">+</button>
+            <button onclick="minus()">-</button>
+        </div>
+    </div>
+    
+    <script>
+        let counter = 0;
+
+        function updateDisplay() {
+            document.getElementById('counter').innerHTML = `<h1>${counter}</h1>`;
+        }
+
+        function plus() {
+            counter++;
+            check();
+            updateDisplay();
+        }
+
+        function minus() {
+            counter--;
+            check();
+            updateDisplay();
+        }
+
+        function check() {
+            if (counter > 10) {
+                alert("Maximum Limit Reached!");
+                counter = 10;
+            }
+            if (counter < 0) {
+                alert("Minimum Limit Reached!");
+                counter = 0;
+            }
+        }
+    </script>
+</body>
+</html>
